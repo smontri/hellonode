@@ -1,9 +1,5 @@
-node {
-    def app
-    
-    tools {
-        'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'docker'
-    }
+pipeline {
+    agent any
 
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
