@@ -1,5 +1,9 @@
 node {
     def app
+    
+    tools {
+        'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'docker'
+    }
 
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
